@@ -1,0 +1,142 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo-animated span{
+  display: inline-block;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.2s ease-in forwards;
+}
+.logo-animated span:nth-child(1) {
+      animation-delay: 0.1s;
+}
+.logo-animated span:nth-child(2) {
+      animation-delay: 0.2s;
+}
+.logo-animated span:nth-child(3) {
+      animation-delay: 0.2s;
+}
+.logo-animated span:nth-child(4) {
+      animation-delay: 0.3s;
+}
+.logo-animated span:nth-child(5) {
+      animation-delay: 0.4s;
+}
+.logo-animated span:nth-child(6) {
+      animation-delay: 0.5s;
+}
+.logo-animated span:nth-child(7) {
+      animation-delay: 0.6s;
+}
+.logo-animated span:nth-child(8) {
+      animation-delay: 0.7s;
+}
+.logo-animated span:nth-child(9) {
+      animation-delay: 0.8s;
+}
+.logo-animated span:nth-child(10) {
+      animation-delay: 0.9s;
+}
+.logo-animated span:nth-child(11) {
+      animation-delay: 1s;
+}
+.logo-animated span:nth-child(12) {
+      animation-delay: 1s;
+}
+.logo-animated span:nth-child(13) {
+      animation-delay: 1s;
+}
+.logo-animated span:nth-child(14) {
+      animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.navbar {
+  padding: 10px;
+
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu li {
+  position: relative; 
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  display: block;
+}
+.menu li a::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+}
+
+.menu li a:hover::before{
+  width: 100%;
+  left: 0%;
+}
+
+
+.drop-down-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 150px;
+}
+
+.drop-down-menu li a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.menu li:hover > .drop-down-menu {
+  display: block;
+}
+
+.drop-down-menu li a:hover {
+  background-color: #555;
+}
+
+.drop-down-menu {
+  transition: all 0.8s ease;
+}

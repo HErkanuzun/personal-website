@@ -1,0 +1,18 @@
+
+.primary-color{
+    color: var(--primary-color);
+}
+
+.flex-container {
+    display: flex;
+}
+.grid-container {
+    display: grid;
+    column-gap: 5em;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
